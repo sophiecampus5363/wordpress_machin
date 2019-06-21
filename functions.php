@@ -68,7 +68,22 @@ add_action('after_setup_theme', 'lgmac_setup');
 
 
 
+//=====================================================
+//==   AFFICHAGE DATE + CATEGORIE(S)
+//=====================================================
 
+function lgmac_give_me_meta_01($date1, $date2, $cat, $tags) {
 
+    $chaine = 'publié le <time class="entry-date" datetime="';
+    $chaine .= $date1;
+    $chaine .= '">';
+    $chaine .= $date2; 
+    $chaine .= '</time> dans la catégorie ';
+    $chaine .= $cat;
+    $chaine .= ' avec les étiquettes: ' .$tags;
+
+    return $chaine;
+
+}
 
 

@@ -4,9 +4,12 @@
       <?php if (have_posts()): ?>
         <div class="container"><!-- container -->
             <?php  while(have_posts()): the_post();  ?>  
-            
-            <?php get_template_part('content'); ?>
-     
+            <div class="row">
+              <div class="col-12">
+                <?php the_content(); ?>
+            </div>
+          </div>
+          
             <?php endwhile; ?>
                  
     <?php else: ?>       
