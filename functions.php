@@ -35,6 +35,30 @@ add_action('admin_init', 'lgmac_admin_scripts');
 
 
 //=====================================================
+//==   ACTIVATION DES OPTIONS
+//=====================================================
+
+function lgmac_activ_options() {
+
+    $theme_opts = get_option('lgmac_opts');
+    if($theme_opts) {
+    $opts = array(
+        'image_01_url' => '',
+        'legend_01'    => ''
+    );
+        add_option('lgmac_opts', $opts);        
+    }
+}
+
+add_action('after_switch_theme', 'lgmac_activ_options');
+
+
+
+
+
+
+
+//=====================================================
 //==   UTILITAIRES
 //=====================================================
 
@@ -87,3 +111,10 @@ function lgmac_give_me_meta_01($date1, $date2, $cat, $tags) {
 }
 
 
+//=====================================================
+//==  MODIFIE LE TEXTE DE SUITE DE L'EXCERPT
+//=====================================================
+function lgmac_excerpt_more( $more ) {
+    return '<a class="more-link" href="' . get_permalink() . '">' . ' [lire la suite]' . '</a>';
+}
+add_filter('excerpt_more', 'lgmac_excerpt_more');

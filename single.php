@@ -9,7 +9,7 @@
 
         <div class="row m-dw-30">
               
-                <div class="col-10">
+                <div class="col-xs-10">
                         <h1> <?php the_title(); ?> </h1>
 
                         <p>
@@ -29,7 +29,7 @@
         <?php endwhile; ?>
 
         <div class="row">
-            <div class = "col-12">
+            <div class = "col-xs-12">
                  <nav>
                     <ul class = "machin-pager">
                             <li class='pull-left'><?php previous_post_link(); ?></li>
@@ -42,7 +42,7 @@
                  
     <?php else: ?>       
           <div class="row">
-              <div class="col-12">
+              <div class="col-xs-12">
                 <p>pas de résultat</p>
               </div>
           </div>

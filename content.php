@@ -1,6 +1,6 @@
         <div class="row m-dw-30">
 
-        <div class="col-2"> <!-- la vignette -->
+        <div class="col-xs-2"> <!-- la vignette -->
 
                 <?php if ($thumbnail_html = wp_get_attachment_image_src( get_post_thumbnail_id ( $post->ID), 'thumbnail')) :
                 $thumbnail_src = $thumbnail_html ['0']; ?>
@@ -9,7 +9,7 @@
 
                 </div> 
               
-                <div class="col-10">
+                <div class="col-xs-10">
                         <h1><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a> </h1>
 
                         <p>
@@ -21,7 +21,7 @@
                                                 ); ?>
                         </p>
 
-                            <?php the_content(); ?>
+                            <?php the_excerpt(); ?>
  
                 </div>                
         </div> <!-- row -->

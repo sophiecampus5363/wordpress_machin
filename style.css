@@ -10,4 +10,8 @@ Text Domain: Machin
 
 .m-dw-30 { margin-bottom: 30px; }
 
-footer { background-color: green;}
+.aligncenter { margin:auto; }
+
+.card img { margin-bottom: 15px;}
+
+footer { background-color: #CDDDC4; margin-top: 20px; padding-top:25px; padding-bottom:35px;}

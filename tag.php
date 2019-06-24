@@ -9,7 +9,7 @@
         <div class="container"><!-- container -->
        
         <div class="row ">
-              <div class="col-12">
+              <div class="col-xs-12">
                     <p class="lead">Liste des articles avec l'étiquette <?php single_tag_title(); ?></p>
               </div>                
         </div> <!-- row -->
@@ -22,7 +22,7 @@
         <?php endwhile; ?>
 
         <div class="row">
-            <div class = "col-12">
+            <div class = "col-xs-12">
                  <nav>
                     <ul class = "machin-pager">
                             <li class='pull-left'><?php previous_post_link(); ?></li>
@@ -35,7 +35,7 @@
                  
     <?php else: ?>       
           <div class="row">
-              <div class="col-12">
+              <div class="col-xs-12">
                 <p>pas de résultat</p>
               </div>
           </div>

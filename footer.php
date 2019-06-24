@@ -2,7 +2,7 @@
 <?php wp_footer(); ?>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-xs-12">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque officia nam magni, 
         exercitationem non laborum iure nulla fuga aliquid placeat quam omnis? Exercitationem dolore inventore
          corrupti nulla provident et fugit iure repellendus reprehenderit. Minima corrupti laborum vel eaque nam 
